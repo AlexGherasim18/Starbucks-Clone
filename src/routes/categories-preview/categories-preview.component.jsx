@@ -8,6 +8,10 @@ import { MenuPageWrapper, SideMenu } from "../menu/menu.styles";
 
 const CategoriesPreview = () => {
   const categoriesMap = useSelector(selectCategoriesMap);
+  Object.keys(categoriesMap).map((name) => {
+    const products = categoriesMap[name]
+    return console.log(products)
+  })
   return (
     <MenuPageWrapper>
       <SideMenu>

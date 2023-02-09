@@ -22,7 +22,7 @@ const Navigation = () => {
             <LeftList>
               <LeftItem to='menu'>MENU</LeftItem>
               <LeftItem to='rewards'>REWARDS</LeftItem>
-              <LeftItem>GIFT CARDS</LeftItem>
+              <LeftItem to='gift'>GIFT CARDS</LeftItem>
             </LeftList>
             <RightList>
               <RightItem>

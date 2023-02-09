@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { warmNeutral } from "../../variables.styles";
 
 export const ArrowBtns = styled.div`
   display: flex;
@@ -6,8 +7,18 @@ export const ArrowBtns = styled.div`
   flex-direction: row;
   
   button {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
     margin: 0 50px 15px 50px;
-    
+    background: none;
+    border: none;
+    border-radius: 50%;
+
+    &:hover {
+      background: ${warmNeutral}
+    }
+
     span {
       font-size: 2.4rem;
     }
@@ -15,6 +26,7 @@ export const ArrowBtns = styled.div`
 `;
 
 export const CloseBtn = styled.button`
+  padding: 10px;
   position: absolute;
   top: 16px;
   right: 16px;
@@ -22,6 +34,10 @@ export const CloseBtn = styled.button`
   border: none;
   cursor: pointer;
   font-size: 1.6rem;
+
+  &:hover {
+    background: ${warmNeutral}
+  }
 `;
 
 export const PopupInner = styled.div`

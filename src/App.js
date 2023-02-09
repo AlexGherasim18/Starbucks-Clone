@@ -10,10 +10,11 @@ import Featured from './routes/featuredpage/featured.component';
 import PreviousOrders from './routes/previous-orders/previous.component';
 import FavoriteProducts from './routes/favoriteproducts/favoriteproducts.component';
 import Rewards from './routes/rewards/rewards.component';
+import GiftCard from './routes/gift-card/gift-card.component';
 import { useEffect } from 'react';
 import { onAuthStateChangedListener, createUserDocumentFromAuth } from './utils/firebase/firebase.utils';
 import { setCurrentUser } from './store/user/user.action';
-import { GlobalStyle } from './global.styles';
+
 const App = () => {
   const dispatch = useDispatch()
 
@@ -39,6 +40,7 @@ const App = () => {
           <Route path='menu/previous' element={<PreviousOrders />}/>
           <Route path='menu/favorites' element={<FavoriteProducts />}/>
           <Route path='rewards' element={<Rewards />}/>
+          <Route path='gift' element={<GiftCard />}/>
         </Route>
       </Route>  
     </Routes>

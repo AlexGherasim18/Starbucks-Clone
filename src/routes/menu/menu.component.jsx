@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { SubNavBar, SubNavLink} from "./menu.styles";
 import { NavLink} from "react-router-dom";
 import { fetchCategoriesAsync } from "../../store/menu/menu.action";
-import { useDispatch} from "react-redux";
+import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import CategoriesPreview from "../categories-preview/categories-preview.component";
 import Category from "../category/category.component";
@@ -17,7 +17,6 @@ const Menu = () => {
   useEffect(() => {
     dispatch(fetchCategoriesAsync());
   }, [])
-
   return (
     <Fragment>
       <SubNavBar>
